@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.person {
+  display: none;
+}
+.seller {
+  display: none;
+}
+.box-model {
+  width: 200px;
+  height: 100px;
+}
+.from-text {
+  font-weight: bold;
+  color: rgb(16, 137, 211);
+}
+.login-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+@media screen and (min-width: 765px) {
+  .person {
+    display: flex;
+  }
+  .HomeMain {
+    display: flex;
+    gap: 16;
+
+    /* justify-content: center; */
+  }
+
+  .seller {
+    display: block;
+  }
+  /* From Uiverse.io by Yaya12085 */
+  .loader {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    animation: spin 1s linear infinite;
+    stroke: rgb(107, 108, 109);
+  }
+
+  .loading-text {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 500;
+    color: rgba(107, 114, 128, 1);
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+.HomeMain {
+  outline: none;
+
+  scrollbar-color: transparent transparent; /* Hide the scrollbar colors */
+}
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center it vertically */
+}
+
+
